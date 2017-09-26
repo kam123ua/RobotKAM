@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="573.0" style="-fx-background-color: #BC8F8F;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MouseFrame">
+   <children>
+      <Button fx:id="btnOK" layoutX="112.0" layoutY="271.0" mnemonicParsing="false" onAction="#Run" prefHeight="59.0" prefWidth="379.0" style="-fx-background-color: #8FBC8F;" text="Запустити робота">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView disable="true" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/run.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="14.0" layoutY="21.0" prefHeight="34.0" prefWidth="588.0" text="Введіть інтервал натискання(в секундах):">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <TextField fx:id="text_n" layoutX="14.0" layoutY="55.0" prefHeight="32.0" prefWidth="545.0" style="-fx-background-color: FDF5E6;">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="13.0" layoutY="91.0" prefHeight="34.0" prefWidth="588.0" text="Введіть кількість натискань( -1, якщо к-ть необмежена):">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <TextField fx:id="text_k" layoutX="13.0" layoutY="125.0" prefHeight="32.0" prefWidth="545.0" style="-fx-background-color: FDF5E6;">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="12.0" layoutY="161.0" prefHeight="34.0" prefWidth="588.0" text="Виберіть, яку кнопку комп. мишки натискати:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <Label layoutX="15.0" layoutY="185.0" prefHeight="34.0" prefWidth="579.0" text="(Якщо ліву введіть L, якщо праву - R)">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <TextField fx:id="text_m" layoutX="14.0" layoutY="219.0" prefHeight="32.0" prefWidth="545.0" style="-fx-background-color: FDF5E6;">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+   </children>
+</Pane>
